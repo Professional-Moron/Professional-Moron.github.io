@@ -1,0 +1,54 @@
+<!Doctype HTML>
+<html>
+<head>
+    <title> JS-HTML Intergration </title>
+</head>
+
+<body>
+
+	<h1> JS Applications with ifelse function -- Mr. Ikram</h1>
+    <p> This is my Fifth  HTML page with JavaScript</p>
+
+    <button onclick="option()"> Choice between 2 cars </button>
+		<script>
+		function option() {
+		var person = prompt ('Please enter your name');
+		var userCar = prompt ('Please enter the name of your car');
+		var car1 = myCar(userCar);
+		document.getElementById("demo1").innerHTML = 'Hello ' + person
+		+ '. That is a ' + car1;
+		}
+		
+		function myCar(x) {
+		if (x==='toyota' || x==='bmw')
+		return 'Cool cars';
+		else
+		return 'Not cool car';
+		}
+		</script>
+		
+	<p id='demo1'> Car choice is.... </p>
+	
+	<hr><br>
+	<hr><br>
+	
+	<button onclick="loop()"> Print out number from 1 till you choose</button>
+	
+		<script>
+		function loop(x) {
+		
+		var text = "";
+		var x = +prompt("What is the maximum you want to print?", '10')
+		for (var i = 0; i < x; i++)  {
+		text += i + " ";
+			}
+		
+		document.getElementBYId("demo2").innerHTML = 'The numbers are ' +
+		text;
+		}
+		</script>
+		
+	<p id='demo2'> NUmbers you requested.... </p>
+	
+</body>
+</html>

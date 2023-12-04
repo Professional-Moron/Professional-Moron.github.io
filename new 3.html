@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> Contact Me </head>
+
+<title> Contact Me </title>
+
+<body>
+
+<h1> this is my third page - biography </h1>
+
+<nav style='background-color:red; text-align:center; font-weight:bold; font-size:150%; color:black'>
+
+<a href= 'pg1_doodoo.html'> about me </a>
+<a href= 'p2_hobby.html'> hobbies </a>
+<a href= 'new 3.html'> contact me </a>
+<a href= 'pg 4.html'> My Art </a>
+
+</nav>
+
+<style>
+
+a:link{ color: black; 
+text-decoration:none;}
+a:visited{ color:purple;
+text-decoration:none;}
+a:hover{ color: blue;
+text-decoration:underline;}
+a:active{ color:black;
+text-decoration:underline;}
+input[type=submit] 
+{background-color:orange; color:yellow; padding: 15px 80px;}
+
+input[type=reset] 
+{background-color:black; color:red; padding: 15px 80px;}
+
+</style>
+
+<h2> My Contact Form </h2>
+<form>
+<label> First Name: <input type = 'text'> </label>
+<br> <br>
+<label> Last Name: <input type = 'text'> </label>
+<br> <br>
+<p> Best Way to Contact </p>
+<br>
+<label> What do you prefer? </label>
+
+<select id='contactWay'>            <!--- Drop Down menu selection -->
+<option value='cell'> Cell Phone </option>
+<option value='email'> Email </option>
+<option value='vCall'> Video Call </option>
+<option value='inPerson'> In Person Meeting </option>
+</select> <br><br>
+
+<fieldset> <!-- Radio Type Menu-->
+
+<legend> Which is our closest office? (choose one) </legend>
+
+<input type="radio" name="chioff">
+<label> Chicago - Northside </label> <br> <br>
+<input type="radio" name="chioff">
+<label> Chicago - Downtown </label> <br> <br>
+<input type="radio" name="chioff">
+<label> Chicago - Southside </label> <br> <br>
+
+</fieldset>
+
+<h3 Add labels to ask user for Date of Birth </h3> <!-- month/date/year -->
+
+<label> Date of Birth </label>
+
+<input input = 'date'>
+<br> <br>
+
+<!--- Make a label to take the date of visit from the user-->
+
+<label> Date of Visit </label>
+
+<input input = 'date'>
+<br> <br>
+
+<!--- Make a label to take the date of visit from the user-->
+
+<br> <br> 
+<label> Select your favorite color: </label>
+<input type='color'>
+<br> <br>
+
+<!-- input a number-->
+<label> What is your favorite number: </label>
+<input type='file'> <br> <br>
+
+<!-- Attaching a file -->
+<label> Attach your Buisness Plan/Resume </label>
+<input type='file'> <br> <br>
+
+<!--Creating a Sunit & reset button -->
+
+<input type='submit' value='submit'>
+<input type= 'reset' value= 'reset'>
+</form>
+</body>
+
+</html>
